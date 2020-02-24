@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* 创建三个不相等的列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* 左右两侧宽度 */
+.column.side {
+  width: 10%;
+}
+
+/* 中间区域宽度 */
+.column.middle {
+  width: 80%;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 响应式布局 - 宽度小于600px时设置上下布局 */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.icon_ul a.icon_cicle {
+    width: 44px;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    background: #eee;
+}
