@@ -1,50 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorate="layout">
 <head>
-	<meta charset="utf-8">
-	<title>毕业设计商城</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet" />
+	<title>毕业设计平台</title>
 </head>
+  <body>
+	<div layout:fragment="content" class="body-home">
+ <div class="home">
+  <div class="landing-section hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <p class="hero-tagline">{Fast, Correct} - Choose two</p>
+          <h1 class="hero-title" id="build-and-test-software-of-any-size-quickly-and-reliably">计算机专业毕业设计项目一站式服务</h1>
+          <h1 class="hero-title" id="build-and-test-software-of-any-size-quickly-and-reliably">帮助你轻松完成毕业答辩</h1>
+          <p class="cta-buttons">
+            <a class="btn btn-success btn-lg cta-main" href="#">购买成品
+            </a>
+            <a class="btn btn-success btn-lg cta-main" href="#">定制开发</a>
+          </p>
+        </div>
+        <div class="col-sm-4 hidden-xs">
+          <img title="Bazel" alt="Bazel logo" class="logo img-responsive" th:src="@{/img/bazel-icon.svg}" >
+        </div>
+      </div>
+    </div>
+  </div>
 
-<style>
+  <div class="landing-section features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 id="why-bazel">为什么选择我们？</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <h3 id="speed-up-your-builds-and-tests">专业的技术团队</h3>
+          <p>我们团队拥有10多个项目经验丰富的软件研发工程师, 多年的毕业设计项目服务经验,能快速的完成定制开发工作以及论文的编写工作.</p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <h3 id="one-tool-multiple-languages">完整的售后服务</h3>
+          <p>凡是在本站定制开发或者购买成品之后,我们将免费提供软件安装、调试等工作。</p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-3">
+          <h3 id="scalable">大量的成品</h3>
+          <p>
+                   本站拥有大量价格便宜的成品项目供您选择或者参考 
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <h3 id="extensible-to-your-needs">定制服务</h3>
+          <p>如果你有特定的需求,我们提供专业的定制开发服务, 只需要你将需要告诉我们即可</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</style>
+  <div class="landing-section users">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 id="trusted-by-industry-leaders">我们的服务</h2>
+          <p class="text-center">提供移动APP开发(Android和IOS),微信公众号、小程序开发，基于Java、PHP开发的的网站系统。</p>
+          <p class="text-center">论文的编写,软件的远程安装和调试</p>
+        </div>
+      </div>
 
-<body>
-<div layout:fragment="content" >
-	<div class="row">
-		<div class="column side">
-		</div>
-  
-		<div class="column middle">
-	    	<div>
-			    <h2>本站简介</h2>
-			    <p>
-			    	本站成立于2012年,历经多年的发展,现已成为国内较为大型的毕业设计(论文)服务机构.是专业的毕业设计(论文)服务平台,
-			    	网站拥有一支实力雄厚的毕业设计(论文)队伍,为客户提供精湛,快速,专业,全面的毕业设计(论文)服务.
-			    </p>
-			    <p>
-				       众多成品资料展示可体现出本站的实力.大网站,重信誉,本站现有全职员工20人,并且拥有兼职工作人员50多人.
-					本网站上刊登的成品只是部分介绍和大纲,如需完整的请在线购买.
-			    </p>
-			</div>
-		    <div>
-			    <h2>业务范围</h2>
-			    <p>各类web项目,支持多种编程语言(Java,PHP,.Net)</p>
-			    <p>手机app开发业务.</p>
-		    </div>
-	    	<div>
-	    		<h2>联系我们</h2>
-	    	 	 <div class="icon_ul">
-					<a style="background: #49c42d;" href="#" class="icon_cicle" title="微信:18782207486"><i class="fa fa-weixin fa-fw"></i></a>
-					<a style=" background: #106bbc;"href="3" class="icon_cicle" title="QQ:4680731055"><i class="fa fa-qq fa-fw"></i></a>
-					<a style=" background: #42a4e1;" href="" class="icon_cicle" title="手机:18782207486"><i class="fa fa-phone fa-fw"></i></a>
-				</div>
-	    	</div>
-	    	
-		</div>
-		<div class="column side">
-		</div>
-	</div>
+      <div class="row logos">
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/java.svg}">
+        </div>
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/android.svg}">
+        </div>
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/ios.svg}">
+        </div>
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/mini-program.svg}">
+        </div>
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/php.svg}">
+        </div>
+        <div class="col-sm-6 col-md-2 user-logo-container">
+          <img class="user-logo" th:src="@{/img/net.svg}">
+        </div>
+      </div>
+
+      <div class="row text-center">
+        
+        <div class="col-sm-12 col-md-2">
+          <blockquote>
+            <p>JavaWeb网站</p>
+          </blockquote>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <blockquote>
+            <p>Android应用</p>
+          </blockquote>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <blockquote>
+            <p>IOS应用</p>
+          </blockquote>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <blockquote><p>微信小程序</p></blockquote>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <blockquote><p>PHP网站</p></blockquote>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <blockquote><p>.Net网站</p></blockquote>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </div>
-</body>
-</html>
+   </div>
+</body></html>

@@ -2,16 +2,19 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
 <head>
     <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
-   	<link rel="stylesheet" th:href="@{/css/myapp.css}"/>
-   	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
-   	<link rel="stylesheet" th:href="@{/font-awesome-4.7.0/css/font-awesome.css}" />
+   	<!-- Bootstrap -->
+	<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+	<link th:href="@{/css/font-awesome.css}" rel="stylesheet" />
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" th:href="@{/css/main.css}"/>
 </head>
 <body>
-    <div class="container">
-        <div th:replace="layout/header :: header"></div>
-        <div layout:fragment="content" > content</div>
-        <div th:replace="layout/footer :: footer"></div>
-    </div>
+  <div>
+      <div th:replace="layout/header :: header"></div>
+      <div layout:fragment="content" > content</div>
+      <div th:replace="layout/footer :: footer"></div>
+  </div>
 </body>
 </html>
